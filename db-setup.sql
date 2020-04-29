@@ -2,17 +2,18 @@ CREATE DATABASE dbms_final_project;
 CREATE USER dbms_project_user WITH PASSWORD 'dbms_password';
 GRANT ALL PRIVILEGES ON DATABASE dbms_final_project TO dbms_project_user;
 
+\connect "dbname=dbms_final_project user=dbms_project_user password=dbms_password";
 
 CREATE TABLE Conference
 (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(127)
+  name VARCHAR(127) UNIQUE
 );
 
 CREATE TABLE Division
 (
   id SERIAL PRIMARY KEY,
-  name VARCHAR(127)
+  name VARCHAR(127) UNIQUE
 );
 
 CREATE TABLE Team
