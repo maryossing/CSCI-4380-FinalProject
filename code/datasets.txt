@@ -1,1 +1,2 @@
-https://data.ny.gov/api/views/3cij-nwhw/rows.csv?accessType=DOWNLOAD&sorting=true
+http://www.nflsavant.com/dump/weather_20131231.csv
+http://www.habitatring.com/standings.csv
